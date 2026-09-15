@@ -14,4 +14,4 @@ jobs:
       - name: Push to Dokku
         run: |
           GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=accept-new" \
-          git push dokku@localhost:demo HEAD:refs/heads/master --force
+          git push dokku@localhost:demo-app HEAD:refs/heads/master --force
